@@ -1,0 +1,18 @@
+{
+  "mlflow_tracking_uri": "file:./mlruns",
+  "experiment_name": "contractor_risk_prediction",
+  "run_id": "a5b2f3ff26cb41ff9b8e0d73f958d44a",
+  "model_name": "CatBoost_Default_Risk_Classifier",
+  "model_version": 1,
+  "model_uri": "models:/CatBoost_Default_Risk_Classifier/1",
+  "model_artifact_path": "catboost_model",
+  "deployment_command": "mlflow models serve -m \"models:/CatBoost_Default_Risk_Classifier/1\" -p 5001 --no-conda",
+  "api_endpoint": "http://localhost:5001/invocations",
+  "health_endpoint": "http://localhost:5001/ping",
+  "deployment_date": "2026-05-18T13:53:28.660339",
+  "model_metrics": {
+    "f1_score": 0.8546625939189664,
+    "roc_auc": 0.9282753122728334,
+    "accuracy": 0.8587177255584566
+  }
+}
